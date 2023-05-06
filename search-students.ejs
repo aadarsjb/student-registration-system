@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Students</title>
+</head>
+<body>
+
+    <h1>Search Students</h1>
+
+    <form action="/search">
+        <input type="search" name="name" placeholder="Search Name" required><br><br>
+        <input type="search" name="email" placeholder="Search email" required><br><br>
+        <input type="search" name="mno" placeholder="Search Mobile" required><br><br>
+        <input type="submit" value="search">
+    </form>
+
+    <br>
+    <br>
+
+
+    <% if(students.length > 0) { %>
+        <table border="1" width="100%">
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile No.</th>
+            </tr>
+            
+            <% if(students.length > 0){ %>
+                <% for(var i=0; i<students.length; i++){ %>
+                    <tr>
+                        <th><%- students[i].id %></th>
+                        <th><%- students[i].name %></th>
+                        <th><%- students[i].email %></th>
+                        <th><%- students[i].mno %></th>
+                    </tr>
+                <% } %>    
+    
+                <% }else{ %>
+                    <% } %>
+        </table>
+
+        <% } else { %>
+
+    <% } %> 
+    
+</body>
+</html>

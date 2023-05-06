@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Register</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: tomato;
+}
+
+body{
+    background: tomato;
+    padding: 0 10px;
+}
+
+.wrapper{
+    max-width: 500px;
+    width: 100%;
+    background: #000000;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form{
+    width: 100px;
+}
+
+.input_field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.input_field label{
+    width: 200px;
+    color: #ff0000;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.input{
+    width: 10px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <h1>Student Register</h1>
+        </div>
+        <div class="form">
+            <form action="" method="POST">
+                <div class="input_field">
+                    <label>Name</label>
+                    <input type="text" name="name">
+                </div>
+                <div class="input_field"><label>Email</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="input_field"><label>Mobile Number</label>
+                    <input type="number" name="mno">
+                </div>
+                <div class="input_field"><input type="submit" value="submit" class="button"></div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
